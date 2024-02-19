@@ -9,7 +9,7 @@ local data = {
     ["embeds"] = {
         {
             ["title"] = "XerusHub",
-            ["description"] = "\n**executor:** "``` .. identifyexecutor() .. ```"\n**player:** "``` .. game.Players.LocalPlayer.Name .. ```"\n**level:** "``` .. format(game:GetService("Players").LocalPlayer.Data.Level.Value) .. ```"\n**Job Id:** "``` .. tostring(game.JobId)```,
+            ["description"] = "\n**executor:** " .. identifyexecutor() .. "\n**player:** " .. game.Players.LocalPlayer.Name .. "\n**level:** " .. format(game:GetService("Players").LocalPlayer.Data.Level.Value) .. "\n**Job Id:** " .. tostring(game.JobId),
             ["type"] = "rich",
             ["color"] = tonumber(1),
             ["image"] = {

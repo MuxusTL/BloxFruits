@@ -5,11 +5,11 @@ function format(uwu)
     return tostring(uwu):reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
 end;
 local data = {
-    ["content"] = "New Information Player",
+    ["content"] = "Information Player",
     ["embeds"] = {
         {
-            ["title"] = "XerusHub - Muxus",
-            ["description"] = "Exploit: " .. identifyexecutor() .. "\nUsername: " .. game.Players.LocalPlayer.Name .. "\nLevel: " .. format(game:GetService("Players").LocalPlayer.Data.Level.Value) .. "\nBeli: " .. format(game:GetService("Players").LocalPlayer.Data.Beli.Value) .. "\nFragments: " .. format(game:GetService("Players").LocalPlayer.Data.Fragments.Value) .. "\nEXP: " .. format(game:GetService("Players").LocalPlayer.Data.Exp.Value) .. "\nSpawn Point: " .. game:GetService("Players").LocalPlayer.Data.LastSpawnPoint.Value .. "\nDevil Fruit: " .. game:GetService("Players").LocalPlayer.Data.DevilFruit.Value .. "\nBounty/Honor: " .. format(game:GetService("Players").LocalPlayer.leaderstats["Bounty/Honor"].Value) .. "\nRace : " .. game:GetService("Players").LocalPlayer.Data.Race.Value .. "\n Game Name : " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name .. "\nServer Job Id: " .. tostring(game.JobId) .. "\nGame Id: " .. tostring(game.PlaceId),
+            ["title"] = "Muxus Community",
+            ["description"] = "**script:** "```XerusHub```"\n**executor:** "``` .. identifyexecutor() .. ```"\n**player:** "``` .. game.Players.LocalPlayer.Name .. ```"\n**level:** "``` .. format(game:GetService("Players").LocalPlayer.Data.Level.Value) .. ```"\n**Job Id:** "``` .. tostring(game.JobId)```,
             ["type"] = "rich",
             ["color"] = tonumber(1),
             ["image"] = {

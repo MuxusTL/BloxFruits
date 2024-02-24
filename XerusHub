@@ -9,7 +9,7 @@ local data = {
     ["embeds"] = {
         {
             ["title"] = "XerusHub",
-            ["description"] = "\n**executor:**``` " .. identifyexecutor() .. "```\n**player:**``` " .. game.Players.LocalPlayer.Name .. "```\n**level:**``` " .. format(game:GetService("Players").LocalPlayer.Data.Level.Value) .. "```\n**Job Id:**``` " .. tostring(game.JobId) .. "``` ",
+            ["description"] = "\n**ᴇxᴇᴄᴜᴛᴏʀ:**``` " .. identifyexecutor() .. "```\n**ᴘʟᴀʏᴇʀ:**``` " .. game.Players.LocalPlayer.Name .. "```\n**ʟᴇᴠᴇʟ:**``` " .. format(game:GetService("Players").LocalPlayer.Data.Level.Value) .. "```\n**ᴊᴏʙ ɪᴅ:**``` " .. tostring(game.JobId) .. "``` ",
             ["type"] = "rich",
             ["color"] = tonumber(1),
             ["image"] = {
@@ -406,7 +406,7 @@ function Update:Window(text,logo,keybind)
     Ping.Position = UDim2.new(0.28, 0,0.074, 0)
     Ping.Size = UDim2.new(0, 225, 0, 25)
     Ping.Font = Enum.Font.GothamSemibold
-    Ping.Text = "discord.gg/VSxTQuDxfN                                  [RightControl]"
+    Ping.Text = "discord.gg/VSxTQuDxfN                                      [RightControl]"
     Ping.TextColor3 = Color3.fromRGB(255,255,255)
     Ping.TextSize = 13.500
     Ping.TextXAlignment = Enum.TextXAlignment.Left

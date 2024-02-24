@@ -31,10 +31,10 @@ request({
 _G.HoHoLoaded = true
 notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Notification.lua"))()
 notify.New("Script Blox Fruit!", 60)
-notify.New("Script XerusHub Sử Dụng Trên Fluxus - Delta X - Arceus X - Trigon - Hydorgen!", 60)
+notify.New("Script by minevn2", 60)
 
 
-require(game:GetService("ReplicatedStorage").Notification).new("•Cảm Ơn Vì Đã Sử Dụng Script Của Muxus•"):Display();
+require(game:GetService("ReplicatedStorage").Notification).new("-Cảm Ơn Vì Đã Sử Dụng Script Của Muxus-"):Display();
 require(game:GetService("ReplicatedStorage").Notification).new("Script loading..."):Display();
 wait(5)
 

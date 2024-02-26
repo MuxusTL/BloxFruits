@@ -31,7 +31,7 @@ request({
 _G.HoHoLoaded = true
 notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Notification.lua"))()
 notify.New("Script Blox Fruit!", 60)
-notify.New("Script by minevn2", 60)
+notify.New("Script XerusHub by minevn2 - Muxus", 60)
 
 function Muxus(text)
 		local Notification = require(game.ReplicatedStorage.Notification)
@@ -469,7 +469,7 @@ function Update:Window(text,logo,keybind)
     UserImage.Parent = User
     UserImage.BackgroundTransparency = 0
   --  UserImage.BackgroundColor3 = Color3.fromRGB(225, 225, 225)
-    UserImage.Position = UDim2.new(0, 5, 0, -15)
+    UserImage.Position = UDim2.new(0, 4, 0, -15)
     UserImage.Size = UDim2.new(0, 25, 0, 25)
     UserImage.Image = "rbxassetid://16294367640"
     local UserImageCorner = Instance.new("UICorner")

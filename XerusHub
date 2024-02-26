@@ -33,10 +33,34 @@ notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO
 notify.New("Script Blox Fruit!", 60)
 notify.New("Script by minevn2", 60)
 
+function Muxus(text)
+		local Notification = require(game.ReplicatedStorage.Notification)
+		local notification = Notification.new(text)
+		notification.Duration = 5
+		notification:Display()
+	end
+	local function tablefound(ta, object)
+		for i,v in pairs(ta) do
+			if v == object then
+				return true
+			end
+		end
+		return false
+	end
 
-require(game:GetService("ReplicatedStorage").Notification).new("-Cảm Ơn Vì Đã Sử Dụng Script Của Muxus-"):Display();
-require(game:GetService("ReplicatedStorage").Notification).new("Script loading..."):Display();
-wait(5)
+Muxus("<Color=Green>-Cảm Ơn Vì Đã Sử Dụng Script Của Muxus-<Color=/>")
+Muxus("<Color=White>Script loading...<Color=/>")
+
+Muxus("<Color=Red>1<Color=/>")
+wait(1)
+Muxus("<Color=Red>2<Color=/>")
+wait(1)
+Muxus("<Color=Red>3<Color=/>")
+wait(1)
+Muxus("<Color=Red>4<Color=/>")
+wait(1)
+Muxus("<Color=Red>5<Color=/>")
+wait(0.01)
 
 local Notif = {}
 
@@ -406,7 +430,7 @@ function Update:Window(text,logo,keybind)
     Ping.Position = UDim2.new(0.28, 0,0.074, 0)
     Ping.Size = UDim2.new(0, 225, 0, 25)
     Ping.Font = Enum.Font.GothamSemibold
-    Ping.Text = "discord.gg/VSxTQuDxfN                                       [RightControl]"
+    Ping.Text = "discord.gg/VSxTQuDxfN                                        [RightControl]"
     Ping.TextColor3 = Color3.fromRGB(255,255,255)
     Ping.TextSize = 13.500
     Ping.TextXAlignment = Enum.TextXAlignment.Left
@@ -458,7 +482,7 @@ local Logo = Instance.new("ImageLabel")
 	Logo.Parent = Main
 	Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Logo.BackgroundTransparency = 1.000
-	Logo.Position = UDim2.new(0, -8, 0, -6)
+	Logo.Position = UDim2.new(0, 4, 0, 1)
 	Logo.Size = UDim2.new(0, 135, 0, 135)
 	Logo.Image = "rbxassetid://16306058756"
     local Tab = Instance.new("Frame")

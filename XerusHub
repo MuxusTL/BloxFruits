@@ -469,7 +469,7 @@ function Update:Window(text,logo,keybind)
     UserImage.Parent = User
     UserImage.BackgroundTransparency = 0
   --  UserImage.BackgroundColor3 = Color3.fromRGB(225, 225, 225)
-    UserImage.Position = UDim2.new(0, 10, 0, -15)
+    UserImage.Position = UDim2.new(0, 7, 0, -15)
     UserImage.Size = UDim2.new(0, 25, 0, 25)
     UserImage.Image = "rbxassetid://16294367640"
     local UserImageCorner = Instance.new("UICorner")

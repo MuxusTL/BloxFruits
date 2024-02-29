@@ -9,9 +9,9 @@ local data = {
     ["embeds"] = {
         {
             ["title"] = "XerusHub",
-            ["description"] = "\n**ᴇxᴇᴄᴜᴛᴏʀ:**``` " .. identifyexecutor() .. "```\n**ᴘʟᴀʏᴇʀ:**``` " .. game.Players.LocalPlayer.Name .. "```\n**ʟᴇᴠᴇʟ:**``` " .. format(game:GetService("Players").LocalPlayer.Data.Level.Value) .. "```\n**ᴊᴏʙ ɪᴅ:**``` " .. tostring(game.JobId) .. "``` ",
+            ["description"] = "\n**ᴇxᴇᴄᴜᴛᴏʀ:**``` " .. identifyexecutor() .. "```\n**ᴘʟᴀʏᴇʀ:**``` " .. game.Players.LocalPlayer.Name .. "```\n** .. player.AccountAge .. "```\n**ʟᴇᴠᴇʟ:**``` " .. format(game:GetService("Players").LocalPlayer.Data.Level.Value) .. "```\n**ᴊᴏʙ ɪᴅ:**``` " .. tostring(game.JobId) .. "``` ",
             ["type"] = "rich",
-            ["color"] = tonumber(1),
+            ["color"] = tonumber(322852),
             ["image"] = {
                 ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" .. tostring(game:GetService("Players").LocalPlayer.Name)
             }

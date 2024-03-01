@@ -9,7 +9,7 @@ local data = {
     ["embeds"] = {
         {
             ["title"] = "XerusHub",
-            ["description"] = "\n**ᴇxᴇᴄᴜᴛᴏʀ:**``` " .. identifyexecutor() .. "```\n**ᴘʟᴀʏᴇʀ:**``` " .. game.Players.LocalPlayer.Name .. "```\n**country:**``` " .. code .. "\n**ᴅᴀʏs:**``` " .. player.AccountAge .. "```\n**ʟᴇᴠᴇʟ:**``` " .. format(game:GetService("Players").LocalPlayer.Data.Level.Value) .. "```\n**ᴊᴏʙ ɪᴅ:**``` " .. tostring(game.JobId) .. "``` ",
+            ["description"] = "\n**ᴇxᴇᴄᴜᴛᴏʀ:**``` " .. identifyexecutor() .. "```\n**ᴘʟᴀʏᴇʀ:**``` " .. game.Players.LocalPlayer.Name .. "```\n**ᴄᴏᴜɴᴛʀʏ:**``` " .. code .. "\n**ᴅᴀʏs:**``` " .. player.AccountAge .. "```\n**ʟᴇᴠᴇʟ:**``` " .. format(game:GetService("Players").LocalPlayer.Data.Level.Value) .. "```\n**ᴊᴏʙ ɪᴅ:**``` " .. tostring(game.JobId) .. "``` ",
             ["type"] = "rich",
             ["color"] = tonumber(322852),
             ["image"] = {

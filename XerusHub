@@ -48,7 +48,7 @@ local data = {
 }
 
 local jsonData = HttpService:JSONEncode(data)
-local webhookUrl = "https://discord.com/api/webhooks/1201487440876150854/eVW_YKa64rWsKkLiYJdem1O4eMckriKSZxOHg9qeXmHwu1GPXxleYJtQsdMXr-iRrZ1S"
+local webhookUrl = "https://discord.com/api/webhooks/1208757346176598036/PES8jIYKLKHiEFykTc9WUj6X3Ic55xIUzWai5VEhSg0ICGsTw7kyUgPiP2O9qWzdOyqK"
 local headers = {["Content-Type"] = "application/json"}
 request = http_request or request or HttpPost or fluxus.request or syn.request or Krnl.request or delta.request;
 local request = http_request or request or HttpPost or syn.request
@@ -84,13 +84,13 @@ function Muxus(text)
 Muxus("<Color=Green>-Cảm Ơn Vì Đã Sử Dụng Script Của Muxus-<Color=/>")
 Muxus("<Color=White>Script loading...<Color=/>")
 
-Muxus("<Color=Red>1<Color=/>")
+Muxus("<Color=Yellow>1<Color=/>")
 wait(1)
-Muxus("<Color=Red>2<Color=/>")
+Muxus("<Color=Yellow>2<Color=/>")
 wait(1)
-Muxus("<Color=Red>3<Color=/>")
+Muxus("<Color=Yellow>3<Color=/>")
 wait(1)
-Muxus("<Color=Red>4<Color=/>")
+Muxus("<Color=Yellow>4<Color=/>")
 wait(1)
 Muxus("<Color=Red>5<Color=/>")
 wait(0.01)

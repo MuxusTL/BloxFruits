@@ -1,32 +1,65 @@
-repeat
-    wait()
-until game:IsLoaded() and game.Players.LocalPlayer and game.Players.LocalPlayer.Character;
-function format(uwu)
-    return tostring(uwu):reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
-end;
+local LocalizationService = game:GetService("LocalizationService")
+local player = game.Players.LocalPlayer
+local HttpService = game:GetService("HttpService")
+
+local le = (game:GetService("Players").LocalPlayer.Data.Level.Value)
+local code = LocalizationService:GetCountryRegionForPlayerAsync(player)
 local data = {
-    ["content"] = "Information Player",
-    ["embeds"] = {
+    embeds = {
         {
-            ["title"] = "XerusHub",
-            ["description"] = "```\n**ᴇxᴇᴄᴜᴛᴏʀ:**``` " .. identifyexecutor() .. "```\n**ᴘʟᴀʏᴇʀ:**``` " .. game.Players.LocalPlayer.Name .. "```\n**ᴄᴏᴜɴᴛʀʏ:**``` " .. code .. "```\n**ᴅᴀʏs:**``` " .. player.AccountAge .. "```\n**ʟᴇᴠᴇʟ:**``` " .. format(game:GetService("Players").LocalPlayer.Data.Level.Value) .. "```\n**ᴊᴏʙ ɪᴅ:**``` " .. tostring(game.JobId) .. "``` ",
-            ["type"] = "rich",
-            ["color"] = tonumber(322852),
-            ["image"] = {
-                ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" .. tostring(game:GetService("Players").LocalPlayer.Name)
+            title = "Profile Player",
+            url = "https://www.roblox.com/users/" .. player.UserId,
+            description = "```" .. player.DisplayName .. " (" .. player.Name .. ") ```",
+            color = tonumber(0x7269da),
+            fields = {
+                {
+                    name = "ᴄᴏᴜɴᴛʀʏ:",
+                    value = "```" .. code .. "```",
+                    inline = true
+                },
+                {
+                    name = "ᴀɢᴇ:",
+                    value = "```" .. player.AccountAge .. " Days```",
+                    inline = true
+                },
+                {
+                    name = "ᴇxᴇᴄᴜᴛᴏʀ:",
+                    value = "```" .. identifyexecutor() .. "```",
+                    inline = true
+                },
+                {
+                    name = "ʟᴇᴠᴇʟ:",
+                    value = "```" .. le .. "```",
+                    inline = true
+                },
+                {
+                    name = "ᴊᴏʙ ɪᴅ:",
+                    value = "```" .. tostring(game.JobId) .. "```",
+                    inline = true
+                },
+                {
+                    name = "sᴛᴀᴛᴜs:",
+                    value = "```Người dùng đã sử dụng script XerusHub!```",
+                    inline = true
+                }
             }
         }
     }
 }
-request = http_request or request or HttpPost or fluxus.request or syn.request or Krnl.request;
-request({
-    Url = "https://discord.com/api/webhooks/1208757346176598036/PES8jIYKLKHiEFykTc9WUj6X3Ic55xIUzWai5VEhSg0ICGsTw7kyUgPiP2O9qWzdOyqK",
-    Body = game:GetService("HttpService"):JSONEncode(data),
-    Method = "POST",
-    Headers = {
-        ["content-type"] = "application/json"
-    }
-})
+
+local jsonData = HttpService:JSONEncode(data)
+local webhookUrl = "https://discord.com/api/webhooks/1201487440876150854/eVW_YKa64rWsKkLiYJdem1O4eMckriKSZxOHg9qeXmHwu1GPXxleYJtQsdMXr-iRrZ1S"
+local headers = {["Content-Type"] = "application/json"}
+request = http_request or request or HttpPost or fluxus.request or syn.request or Krnl.request or delta.request;
+local request = http_request or request or HttpPost or syn.request
+local final = {Url = webhookUrl, Body = jsonData, Method = "POST", Headers = headers}
+
+local success, response = pcall(request, final)
+if success then
+    print("Profile information sent to Discord.")
+else
+    print("Failed to send profile information to Discord: " .. response)
+end
 
 _G.HoHoLoaded = true
 notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Notification.lua"))()

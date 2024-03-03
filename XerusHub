@@ -10,7 +10,7 @@ local data = {
             title = "Profile Player",
             url = "https://www.roblox.com/users/" .. player.UserId,
             description = "```" .. player.DisplayName .. " (" .. player.Name .. ") ```",
-            color = tonumber(0x7269da),
+            color = tonumber(00ff00),
             fields = {
                 {
                     name = "ᴄᴏᴜɴᴛʀʏ:",

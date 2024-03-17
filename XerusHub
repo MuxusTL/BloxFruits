@@ -65,7 +65,7 @@ _G.HoHoLoaded = true
 notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Notification.lua"))()
 notify.New("Script Blox Fruit!", 60)
 notify.New("Script XerusHub by minevn2 - Muxus", 60)
-notify.New("Thông báo: Script sắp update tiếng việt!", 60)
+notify.New("Thông báo: Dự kiến update T.V 1/4/24 - 20/4/24!", 60)
 
 function Muxus(text)
 		local Notification = require(game.ReplicatedStorage.Notification)
